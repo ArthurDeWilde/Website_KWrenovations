@@ -15,14 +15,14 @@ p {
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 24pt;
     font-family: sofachrome;
     color: white;
 }
 
 h3 {
     color: white;
-    font-size: 28pt;
+    font-size: 24pt;
 }
 
 a {
@@ -54,7 +54,6 @@ a {
     position: fixed;
     margin-top: -50%;
     width: 100%;
-    min-height: 100px;
 }
 
 .header_titel {
