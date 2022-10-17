@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_titel">
+            <img src="images/logo.png" alt="">
+            <div id="naam">
+                <h1>KW</h1>
+                <h1 id="renovations">Renovations</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="realisaties.html">Realisaties</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <form action="mailto:arthur.de.wilde02@gmail.com">
+                <div class="row">
+                    <div class="col-75">
+                        <h1>EXTRA UITLEG NODIG?</h1>
+                        <input type="text" id="fname" name="firstname" placeholder="Je voornaam.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Je achternaam.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Selecteer hoe je het liefst gecontacteerd wenst te worden.</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="richting" name="richting" required>
+                            <option value="Gsm">Gsm</option>
+                            <option value="E-mail">E-mail</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Je gsm nummer" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Je e-mail adres" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="richting">Je antwoorden zullen automatisch via mail verzonden worden.</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="comment" name="subject" placeholder="Formuleer hier je vraag.." required
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="stuur">
+                    <input type="submit" value="Stuur">
+                </div>
+            </form>
+
+</body>
+
+</html>

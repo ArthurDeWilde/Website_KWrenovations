@@ -1,0 +1,92 @@
+#renovations {
+    font-size: 26pt;
+    margin-top: -20px;
+    font-family: 'Arial Narrow';
+}
+
+#naam {
+    max-height: 100px;
+}
+
+.nav {
+    display: inline;
+    text-align: center;
+    min-width: 300px;
+    align-content: center;
+    margin-top: 4%;
+    position: relative;
+    width: 100%;
+}
+
+.nav a {
+    justify-content: space-around;
+    margin-right: 50px;
+    font-size: larger;
+    display: inline-block;
+    position: relative;
+}
+
+.nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F8A20A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+
+.nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.header_image img {
+    max-width: 60%;
+}
+
+.header {
+    padding: 1px;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    min-height: 100px;
+    width: 100%;
+}
+
+.header_titel {
+    float: left;
+    display: flex;
+    position: sticky;
+}
+
+.header img {
+    max-width: 20%;
+    max-height: 80%;
+}
+
+h2,
+p {
+    color: black;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: sofachrome;
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-size: 24pt;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
