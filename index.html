@@ -1,62 +1,100 @@
 <!DOCTYPE html>
-<html lang="nl">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KW Renovations</title>
-    <link rel="icon" type="image/png" href="Images/logo.png">
-    <link rel="stylesheet" href="style.css">
+  <title>KW Renovations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Images/KW_favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+  </style>
+ 
 </head>
-
 <body>
-    <div class="page_wrapper">
-        <div class="header">
-            <div class="header_titel">
-                <img src="Images/logo.png" alt="">
-                <div id="naam">
-                    <h1>KW</h1>
-                    <h1 id="renovations">Renovations</h1>
-                </div>
-            </div>
-            <div class="nav">
-                <a href="index.html">Home</a>
-                <a href="realisaties.html">Realisaties</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="quote">
-            <h3>Meesters In Kwaliteitsvolle Renovaties</h3>
-        </div>
-        <div class="content">
-            <div class="content_text">
-                <h2>Wie zijn wij?</h2>
-                <p>Al meer dan 20 jaar uw bouwspecialist, wat begon als een zaak die zowel nieuwbouw als renovaties deed
-                    is uitgedraaid tot een zaak die zich voornamelijk specialiseert in renovaties om zo nog een
-                    betere service te kunnen leveren. <br> <br> Het hele jaar rond staan wij en al onze trouwe partners
-                    klaar voor al jullie werken. Met de nadruk op kwaliteitsmateriaal en fijne afwerking stellen wij
-                    klant na klant steeds tevreden want daar draait het bij ons om, onze klanten. </p>
-            </div>
-            <div class="content_image">
-                <img src="Images/badkamer_1.jpg" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <div class="content_image">
-                <img src="Images/steenkerke.JPG" alt="">
-            </div>
-            <div class="content_text">
-                <h2>Wat doen wij?</h2>
-                <p>Bij ons kan u steeds terecht voor al uw renovaties groot of klein, werken binnen of buiten. <br>
-                    sanitair, elektriciteit, vloeren, plaatsing van ramen, zolderinrichting en nog zo veel meer behoren
-                    allemaal tot onze specialiteiten. Ook voor tuin of dak werken en andere zaken zoals verwarming kunt
-                    u bij ons terecht. Twijfel vooral niet om ons te contacteren via onze <a href="contact.html"
-                        style="text-decoration: underline; color: #F8A20A;">Contact</a> pagina.</p>
-            </div>
+  <div id="wrapper">
+    <div class="header-container">
+<img src="Images/logo_bw.png" alt="">   
+ </div>
 
-        </div>
+    <div class="navigation-container">
+      <!-- Navigation bar -->
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
 
+      <ul class="navbar">
+        <li><a href="mailto:info@kwnrenovations.be"> info@kwrenovations.be</a></li>
+        <li><a href="tel:+32475676723">+32475676723</a></li>
+      </ul>
+
+      <!-- Sub-navigation bar -->
+      <ul class="subnav">
+        <li><a href="index.html"><strong>Home</strong></a></li>
+        <li><a href="aanbod.html">Aanbod</a></li>
+        <li><a href="realisaties.html">Realisaties</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Add the new div container before the content section -->
+  <div class="intro-section">
+    <div class="intro-container">
+      <h2>Meesters in kwaliteitsvolle renovaties.</h2>
+      <p>Al meer dan 20 jaar uw bouwspecialist, wat begon als een zaak die zowel nieuwbouw als renovaties deed is uitgedraaid tot een zaak die zich voornamelijk specialiseert in renovaties om zo nog een betere service te kunnen leveren.
+
+        Het hele jaar rond staan wij en al onze trouwe partners klaar voor al jullie werken. Met de nadruk op kwaliteitsmateriaal en fijne afwerking stellen wij klant na klant steeds tevreden want daar draait het bij ons om,<strong>onze klanten.</strong></p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h1>Ons aanbod</h1>
+    <div class="gallery">
+      <div class="image-container">
+
+        <img src="Images/Francis/IMG_3285.JPG"> 
+        <div class="image-text">
+          <h2>Buiten werken</h2>
+        </div>
+      </div>
+      <!-- Repeat the image-container div for the remaining images -->
+      <div class="image-container">
+        <img src="Images/steenkerke.JPG" alt="...">
+        <div class="image-text">
+          <h2>Dakwerken</h2>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Images/werf_1/IMG_5802.JPG">
+        <div class="image-text">
+          <h2>Badkamers</h2>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Images/buizen_close.jpeg"> 
+        <div class="image-text">
+          <h2>Sanitair</h2>
+        </div>
+      </div>
+      </div>
+      <a class="meer-link" href="aanbod.html">Ontdek meer→</a>
+    </div>
+    <footer>&copy KW Renovations all rights reserved 2023</footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        hamburgerMenu.addEventListener("click", toggleMenu);
+    
+        function toggleMenu() {
+          const navbar = document.querySelector(".navbar");
+          const subnav = document.querySelector(".subnav");
+    
+          hamburgerMenu.classList.toggle("active");
+          navbar.classList.toggle("active");
+          subnav.classList.toggle("active");
+        }
+      });
+    </script>
 </body>
-
 </html>

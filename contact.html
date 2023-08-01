@@ -1,79 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="header.css">
-    <title>Contact</title>
+  <title>KW Renovations - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" type="image/png" href="Images/KW_favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+  </style>
 </head>
-
 <body>
-    <div class="header">
-        <div class="header_titel">
-            <img src="Images/logo.png" alt="">
-            <div id="naam">
-                <h1>KW</h1>
-                <h1 id="renovations">Renovations</h1>
-            </div>
-        </div>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="realisaties.html">Realisaties</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <div id="wrapper">
+    <div class="header-container">
+      <img class="image" src="images/logo_bw.png" alt="">
     </div>
-    <div class="main">
-        <div class="container">
-            <form action="mailto:info@kwrenovations.be">
-                <div class="row">
-                    <div class="col-75">
-                        <h1>EXTRA UITLEG NODIG?</h1>
-                        <input type="text" id="fname" name="firstname" placeholder="Je voornaam.." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Je achternaam.." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="country">Selecteer hoe je het liefst gecontacteerd wenst te worden.</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="richting" name="richting" required>
-                            <option value="Gsm">Gsm</option>
-                            <option value="E-mail">E-mail</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Je gsm nummer" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Je e-mail adres" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="richting">Je antwoorden zullen automatisch via mail verzonden worden.</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="comment" name="subject" placeholder="Formuleer hier je vraag.." required
-                            style="height:200px"></textarea>
-                    </div>
-                </div>
-                <div class="stuur">
-                    <input type="submit" value="Stuur">
-                </div>
-            </form>
 
+    <div class="navigation-container">
+
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- Navigation bar -->
+      <ul class="navbar">
+        <li><a href="mailto:info@kwnrenovations.be"> info@kwrenovations.be</a></li>
+        <li><a href="tel:+32475676723">+32475676723</a></li>
+      </ul>
+
+      <!-- Sub-navigation bar -->
+      <ul class="subnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aanbod.html">Aanbod</a></li>
+        <li><a href="realisaties.html">Realisaties</a></li>
+       <li><a href="contact.html"><strong>Contact</strong></a></li> 
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-container">
+      <h1>Contacteer ons</h1>
+      <p>Voor verdere vragen contacteer ons op:</p>
+      <ul>
+        <li><a href="mailto:info@kwnrenovations.be"> info@kwrenovations.be</a></li>
+        <li><a href="tel:+32475676723">+32475676723</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      hamburgerMenu.addEventListener("click", toggleMenu);
+  
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        const subnav = document.querySelector(".subnav");
+  
+        hamburgerMenu.classList.toggle("active");
+        navbar.classList.toggle("active");
+        subnav.classList.toggle("active");
+      }
+    });
+  </script>
 </body>
-
 </html>
