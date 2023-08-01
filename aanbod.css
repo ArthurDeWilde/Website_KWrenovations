@@ -35,13 +35,10 @@ body {
   flex: 1;
 }
 
-.aanbod-item-text h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.aanbod-item-text p {
-  margin: 0;
+.aanbod-item-text h2,
+.aanbod-item-text p,
+.aanbod-item-text a {
+  font-size: 16px;
 }
 
 /* Media queries for responsive design */
@@ -66,8 +63,10 @@ body {
   /* Adjust the hamburger menu to the right side */
   .navigation-container {
     display: flex;
-    justify-content: flex-end; /* Move the hamburger menu to the right */
-    align-items: center; /* Vertically center the menu */
+    justify-content: flex-end;
+    /* Move the hamburger menu to the right */
+    align-items: center;
+    /* Vertically center the menu */
   }
 
   /* Styling for the hamburger menu icon */
@@ -85,7 +84,8 @@ body {
     background-color: #333;
     margin: 5px;
     /* Rotate the first and third line elements to create the cross icon */
-    transform-origin: center; /* Set the rotation origin to the center */
+    transform-origin: center;
+    /* Set the rotation origin to the center */
     transition: transform 0.3s;
   }
 

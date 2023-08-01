@@ -9,8 +9,14 @@ body {
   background-size: 100%;
 }
 
+
 h1 {
   font-family: 'Rowdies', cursive;
+  font-size: 32px;
+}
+
+footer {
+  text-align: center;
 }
 
 /* CSS styles for the wrapper div */
@@ -131,6 +137,7 @@ ul.subnav li a {
 .content-section h1, .content-section a {
   text-decoration: none;
   text-align: center;
+  font-size: 26px;
 }
 
 .meer-link {
