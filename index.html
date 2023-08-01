@@ -4,7 +4,6 @@
   <title>KW Renovations</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="Images/KW_favicon.png">
-  <script src="lightbox.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
   </style>
@@ -17,12 +16,7 @@
 
     <div class="navigation-container">
       <!-- Navigation bar -->
-      <div class="hamburger-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-
+     
       <ul class="navbar">
         <li><a href="mailto:info@kwnrenovations.be"> info@kwrenovations.be</a></li>
         <li><a href="tel:+32475676723">+32475676723</a></li>
@@ -77,20 +71,6 @@
     <a class="meer-link" href="aanbod.html">Ontdek meer→</a>
   </div>
   <footer>&copy KW Renovations all rights reserved 2023</footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-      hamburgerMenu.addEventListener("click", toggleMenu);
-
-      function toggleMenu() {
-        const navbar = document.querySelector(".navbar");
-        const subnav = document.querySelector(".subnav");
-
-        hamburgerMenu.classList.toggle("active");
-        navbar.classList.toggle("active");
-        subnav.classList.toggle("active");
-      }
-    });
-  </script>
+  
 </body>
 </html>

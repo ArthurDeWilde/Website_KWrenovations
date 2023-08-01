@@ -17,11 +17,7 @@
 
     <div class="navigation-container">
 
-      <div class="hamburger-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+     
       <!-- Navigation bar -->
       <ul class="navbar">
         <li><a href="mailto:info@kwnrenovations.be"> info@kwrenovations.be</a></li>
@@ -48,20 +44,5 @@
       </ul>
     </div>
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-      hamburgerMenu.addEventListener("click", toggleMenu);
-  
-      function toggleMenu() {
-        const navbar = document.querySelector(".navbar");
-        const subnav = document.querySelector(".subnav");
-  
-        hamburgerMenu.classList.toggle("active");
-        navbar.classList.toggle("active");
-        subnav.classList.toggle("active");
-      }
-    });
-  </script>
 </body>
 </html>
