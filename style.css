@@ -128,12 +128,12 @@ ul.subnav li a {
   overflow-x: hidden; /* Add overflow property to prevent horizontal scrolling */
 }
 
-.content-section h1,.content-section a {
+.content-section h1, .content-section a {
   text-decoration: none;
   text-align: center;
 }
 
-.meer-link{
+.meer-link {
   color: orange;
   margin-top: 15px;
   font-size: 24px;
@@ -190,7 +190,6 @@ ul.subnav li a {
   z-index: 1;
 }
 
-
 .image-text {
   position: absolute;
   top: 50%;
@@ -201,8 +200,8 @@ ul.subnav li a {
   z-index: 2;
 }
 
-.image-container:hover img{
-box-shadow: 3px 3px 4px black;
+.image-container:hover img {
+  box-shadow: 3px 3px 4px black;
 }
 
 .image-container:hover .image-text {
@@ -232,15 +231,10 @@ box-shadow: 3px 3px 4px black;
 }
 
 strong {
-
-text-decoration: underline;
-text-decoration-color: orange;
-text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 2px;
 }
-
-
-
-
 
 /* CSS styles for mobile */
 @media (max-width: 768px) {
@@ -258,22 +252,23 @@ text-decoration-thickness: 2px;
   .gallery {
     width: 80%;
   }
-  
+
   .intro-section {
     width: 80%;
     margin: 200px auto 0;
     padding: 20px;
   }
 
-  .content-section{
+  .content-section {
     margin-top: 10px;
   }
+
   .navigation-container {
     display: flex;
     justify-content: flex-end; /* Move the hamburger menu to the right */
     align-items: center; /* Vertically center the menu */
   }
-  
+
   .navbar,
   .subnav {
     display: none;
@@ -321,12 +316,13 @@ text-decoration-thickness: 2px;
   .subnav.active {
     display: block;
   }
+
   .hamburger-menu.active .header-container img {
     width: 150px; /* Set the desired logo width for the hamburger menu */
   }
 }
 
-footer{
+footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -338,7 +334,7 @@ footer{
     padding: 10px;
   }
 
-  .content-section{
+  .content-section {
     margin-top: 10px;
   }
 
@@ -349,8 +345,7 @@ footer{
 
   /* Update styles for the header image */
   .header-container img {
-  width: 60%;
-
+    width: 60%;
   }
 
   /* Update styles for the navigation bar */
@@ -361,15 +356,10 @@ footer{
   .navigation-container {
     flex-basis: 100%;
   }
-    /* Update styles for the gallery */
-    .gallery {
-      width: 100%;
-      grid-template-columns: repeat(2, 1fr);
-    }
+
+  /* Update styles for the gallery */
+  .gallery {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
-
-
-
-
-
-
+}

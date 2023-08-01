@@ -7,13 +7,12 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
   </style>
- 
 </head>
 <body>
   <div id="wrapper">
     <div class="header-container">
-<img src="Images/logo_bw.png" alt="">   
- </div>
+      <img src="Images/logo_bw.png" alt="">
+    </div>
 
     <div class="navigation-container">
       <!-- Navigation bar -->
@@ -38,12 +37,10 @@
     </div>
   </div>
 
-  <!-- Add the new div container before the content section -->
   <div class="intro-section">
     <div class="intro-container">
       <h2>Meesters in kwaliteitsvolle renovaties.</h2>
       <p>Al meer dan 20 jaar uw bouwspecialist, wat begon als een zaak die zowel nieuwbouw als renovaties deed is uitgedraaid tot een zaak die zich voornamelijk specialiseert in renovaties om zo nog een betere service te kunnen leveren.
-
         Het hele jaar rond staan wij en al onze trouwe partners klaar voor al jullie werken. Met de nadruk op kwaliteitsmateriaal en fijne afwerking stellen wij klant na klant steeds tevreden want daar draait het bij ons om,<strong>onze klanten.</strong></p>
     </div>
   </div>
@@ -52,13 +49,11 @@
     <h1>Ons aanbod</h1>
     <div class="gallery">
       <div class="image-container">
-
         <img src="Images/Francis/IMG_3285.JPG"> 
         <div class="image-text">
           <h2>Buiten werken</h2>
         </div>
       </div>
-      <!-- Repeat the image-container div for the remaining images -->
       <div class="image-container">
         <img src="Images/steenkerke.JPG" alt="...">
         <div class="image-text">
@@ -77,24 +72,24 @@
           <h2>Sanitair</h2>
         </div>
       </div>
-      </div>
-      <a class="meer-link" href="aanbod.html">Ontdek meer→</a>
     </div>
-    <footer>&copy KW Renovations all rights reserved 2023</footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        hamburgerMenu.addEventListener("click", toggleMenu);
-    
-        function toggleMenu() {
-          const navbar = document.querySelector(".navbar");
-          const subnav = document.querySelector(".subnav");
-    
-          hamburgerMenu.classList.toggle("active");
-          navbar.classList.toggle("active");
-          subnav.classList.toggle("active");
-        }
-      });
-    </script>
+    <a class="meer-link" href="aanbod.html">Ontdek meer→</a>
+  </div>
+  <footer>&copy KW Renovations all rights reserved 2023</footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      hamburgerMenu.addEventListener("click", toggleMenu);
+
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        const subnav = document.querySelector(".subnav");
+
+        hamburgerMenu.classList.toggle("active");
+        navbar.classList.toggle("active");
+        subnav.classList.toggle("active");
+      }
+    });
+  </script>
 </body>
 </html>

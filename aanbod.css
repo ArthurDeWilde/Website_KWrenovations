@@ -36,26 +36,28 @@ body {
 }
 
 .aanbod-item-text h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
 .aanbod-item-text p {
   margin: 0;
-  
 }
 
+/* Media queries for responsive design */
 @media (max-width: 768px) {
   .aanbod-item {
     flex-direction: column;
   }
 
   .aanbod-item img {
-    width: 100%; /* Adjust the image width to fit the container width */
+    width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
     align-self: center;
   }
+
+  /* Hide the navbar and subnav in mobile view */
   .navbar,
   .subnav {
     display: none;
@@ -68,6 +70,7 @@ body {
     align-items: center; /* Vertically center the menu */
   }
 
+  /* Styling for the hamburger menu icon */
   .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -86,7 +89,7 @@ body {
     transition: transform 0.3s;
   }
 
-  /* Rotate the first and third line elements to create the cross icon */
+  /* Rotate the first and third line elements to create the cross icon when the menu is active */
   .hamburger-menu.active .line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 5px);
   }
@@ -99,16 +102,14 @@ body {
     transform: rotate(45deg) translate(-5px, -5px);
   }
 
+  /* Show the navbar and subnav when the hamburger menu is active */
   .navbar.active,
   .subnav.active {
     display: block;
   }
+
+  /* Adjust the logo width for the hamburger menu */
   .hamburger-menu.active .header-container img {
-    width: 150px; /* Set the desired logo width for the hamburger menu */
-  }}
-
-
-
-
-
-
+    width: 150px;
+  }
+}
