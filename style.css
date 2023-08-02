@@ -243,8 +243,10 @@ strong {
   text-decoration-thickness: 2px;
 }
 
+/* Rest of your existing CSS styles... */
+
 /* CSS styles for mobile */
-@media (max-width: 980px) {
+@media (max-width: 1100px) {
   /* Update styles for the wrapper div */
   #wrapper {
     flex-direction: column; /* Change flex-direction to stack elements vertically */
@@ -252,16 +254,22 @@ strong {
     overflow: hidden;
   }
 
-  p{
+  body{
+    background-position: 0;
+  }
+
+  p {
     font-size: 10px;
   }
-  a{
+
+  a {
     font-size: 20px;
   }
 
   /* Update styles for the header-container */
   .header-container {
-    justify-content: flex-start; /* Align items to the left */
+    display: flex; /* Use flexbox to center the logo and navbar horizontally */
+    justify-content: space-between; /* Align items with space between (logo at left and navbar at right) */
     align-items: center; /* Center vertically */
     padding: 20px;
     margin: 0;
@@ -269,7 +277,7 @@ strong {
 
   /* Update styles for the navigation-container */
   .navigation-container {
-    flex-basis: 100%;
+    flex-basis: 50%; /* Adjust flex basis to 50% */
     padding: 10px;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
@@ -327,6 +335,7 @@ strong {
     padding: 0;
     font-size: 1.2em;
     text-align: center; /* Center the sub-navigation links */
+    margin: 10px auto; /* Add some margin for spacing */
   }
 
   ul.subnav li {
@@ -387,4 +396,12 @@ strong {
     transition: opacity 0.3s;
     z-index: 2;
   }
+
+  /* New styles for the subnav-container */
+  .subnav-container {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px; /* Add some margin for spacing */
+  }
 }
+
