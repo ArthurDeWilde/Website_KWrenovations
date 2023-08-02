@@ -35,8 +35,92 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     #gallery {
         column-count: 1;
     }
+    .header-container {
+        display: flex; /* Use flexbox to center the logo and navbar horizontally */
+        justify-content: space-between; /* Align items with space between (logo at left and navbar at right) */
+        align-items: center; /* Center vertically */
+        padding: 20px;
+        margin: 0;
+      }
+    
+      /* Update styles for the navigation-container */
+      .navigation-container {
+        flex-basis: 50%; /* Adjust flex basis to 50% */
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+      }
+    
+      /* Update styles for the logo image */
+      .header-container img {
+        max-width: 20%; /* Set a maximum width for the logo */
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+      /* Update styles for the navigation bar */
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: right; /* Align the navigation links to the right */
+      }
+    
+      ul.navbar li {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    
+      ul.navbar li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
+      ul.navbar li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: orange;
+        position: absolute;
+        left: 10px;
+        /* Adjusted right positioning */
+        transition: width 0.3s;
+        visibility: hidden;
+      }
+    
+      ul.navbar li a:hover::after {
+        width: 80%;
+        visibility: visible;
+      }
+    
+      /* Update styles for the sub-navigation bar */
+      ul.subnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+        text-align: center; /* Center the sub-navigation links */
+        margin: 10px auto; /* Add some margin for spacing */
+      }
+    
+      ul.subnav li {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    
+      ul.subnav li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        position: relative;
+      }
+    
 }
