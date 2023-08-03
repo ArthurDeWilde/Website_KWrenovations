@@ -440,9 +440,9 @@ text-decoration: underline;
   }
 
   #contact-underline{
-    width: 45rem;
+    width: 25rem;
     height: 0.3rem;
-
+overflow: hidden;
   }
   
   .services {
@@ -981,8 +981,11 @@ font-size: 22px;
     .footer {
       height: 18rem;
     }
+    
     .contact-right{
       border-radius: 5px;
+      text-align: center;    
+      padding: 10rem;
     }
     .menu-item a{
       font-size: 32px;
