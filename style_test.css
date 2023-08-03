@@ -6,7 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    
+    overflow: hidden;
   }
 
   
@@ -937,9 +937,20 @@ font-size: 22px;
       border-radius: 5px;
     }
     .menu-item a{
-      font-size: 22px;
+      font-size: 32px;
     }
     .contact-heading{
       font-size: 22px;
     }
+    .banner h1{
+      font-size: 4rem;
+    }
+    .about-us-img-wrapper img {
+      width: 20%;
+      object-fit: cover;
+      opacity: 0.8;
+      margin-bottom: 5rem;
+      max-height: 15rem;
+    }
+    
   }
