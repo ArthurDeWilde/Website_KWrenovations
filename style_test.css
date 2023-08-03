@@ -1026,8 +1026,28 @@ font-size: 22px;
     text-align: center;
   }
 
-  #contact-underline{
-    background-color: #272727;
+  .card {
+    /* Reset the positioning to allow text to wrap below the image */
+    position: static;
+  }
+
+  .card-info {
+    /* Additional styles to adjust the appearance of the card-info on mobile devices */
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #262626;
+    color: #eee;
+    border-radius: 0.5rem;
+    opacity: 1; /* Show the text on mobile devices */
+    visibility: visible; /* Show the text on mobile devices */
+  }
+
+  .card-img-wrapper img {
+    /* Adjust the size and position of the image on mobile devices */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
     
   }

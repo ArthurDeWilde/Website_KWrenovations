@@ -45,7 +45,7 @@
         <div class="banner">
           <h1>Kw Renovations</h1>
 <p>Meesters in <strong>Kw</strong>aliteitsvolle renovaties</p>  
-        <button><a href="#ons">Ontdek meer</a></button>
+<button id="scrollToOns">Ontdek meer</button>
         </div>
       </header>
 
@@ -212,5 +212,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="tilt.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const scrollToOnsButton = document.getElementById("scrollToOns");
+        const onsSection = document.getElementById("ons");
+      
+        scrollToOnsButton.addEventListener("click", function() {
+          onsSection.scrollIntoView({ behavior: "smooth" }); // Scroll to the element with ID "ons"
+        });
+      });
+      </script>
+      
   </body>
 </html>
