@@ -1014,13 +1014,17 @@ font-size: 22px;
 
     .input-group a{
       font-family: "Muli", serif;
-  text-decoration: none;
-  color: #272727;
+  text-decoration: underline;
+  color: #ff8700;
   font-size: 22px;
   }
 
   .input-group {
     text-align: center;
+  }
+
+  #contact-underline{
+    background-color: #272727;
   }
     
   }
