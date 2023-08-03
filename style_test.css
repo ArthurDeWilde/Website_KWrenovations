@@ -936,7 +936,10 @@ font-size: 22px;
     .contact-right{
       border-radius: 5px;
     }
-    .menu-link a{
-      font-size: 32px;
+    .menu-item a{
+      font-size: 22px;
+    }
+    .contact-heading{
+      font-size: 22px;
     }
   }
