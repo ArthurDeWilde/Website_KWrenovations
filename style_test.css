@@ -6,7 +6,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
   }
 
   
@@ -943,7 +942,7 @@ font-size: 22px;
       font-size: 22px;
     }
     .banner h1{
-      font-size: 4rem;
+      font-size: 3rem;
     }
     .about-us-img-wrapper img {
       width: 20%;
@@ -951,6 +950,15 @@ font-size: 22px;
       opacity: 0.8;
       margin-bottom: 5rem;
       max-height: 15rem;
+    }
+    .about-us-img-wrapper{
+      overflow: hidden;
+    }
+
+    .banner {
+      position: absolute;
+      top: 30%;
+      left: 5%;
     }
     
   }
