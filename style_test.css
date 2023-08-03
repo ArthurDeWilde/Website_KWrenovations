@@ -943,6 +943,7 @@ font-size: 22px;
     }
     .banner h1{
       font-size: 3rem;
+      line-height: 4rem;
     }
     .about-us-img-wrapper img {
       width: 20%;
