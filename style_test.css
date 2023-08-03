@@ -325,7 +325,7 @@ text-decoration: underline;
     animation: moveBanner 1s 0.9s forwards;
   }
 
-  .banner button a{color:#fff;}
+  #scrollToOns{color:#fff;}
   
   @keyframes moveBanner {
     0% {
@@ -1035,7 +1035,6 @@ font-size: 22px;
     /* Additional styles to adjust the appearance of the card-info on mobile devices */
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #262626;
     color: #eee;
     border-radius: 0.5rem;
     opacity: 1; /* Show the text on mobile devices */
