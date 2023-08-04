@@ -1026,10 +1026,7 @@ font-size: 22px;
     text-align: center;
   }
 
-  .card {
-    /* Reset the positioning to allow text to wrap below the image */
-    position: static;
-  }
+  
 
   .card-info {
     /* Additional styles to adjust the appearance of the card-info on mobile devices */
@@ -1039,6 +1036,7 @@ font-size: 22px;
     border-radius: 0.5rem;
     opacity: 1; /* Show the text on mobile devices */
     visibility: visible; /* Show the text on mobile devices */
+
   }
 
   .card-img-wrapper img {
@@ -1048,5 +1046,5 @@ font-size: 22px;
     object-fit: cover;
     border-radius: 0.5rem 0.5rem 0 0;
   }
-    
+  
   }
